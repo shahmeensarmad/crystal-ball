@@ -1,14 +1,13 @@
-// Project 11 - Crystal Ball
-  // Create a crystal ball to tell your future
-  // Personal Project Ideas: Pomodoro Timer, Music Player, Realy anything to do with LCD displays
+// Project - Crystal Ball
+  // Create a crystal ball to tell your future// Personal Project Ideas: Pomodoro Timer, Music Player, Realy anything to do with LCD displays
   // Note: Tilt switch helps replicate the motion of shaking the ball for answers
 
 // set up the LiquidCrystal library (import + initialize)
 #include <LiquidCrystal.h>
-LiquidCrystal lcd(12,11,8,5,4,3);  // which pins it will be using to communicate
+LiquidCrystal lcd(12, 11, 5, 4, 3, 2);  // which pins it will be using to communicate
 
 // constants and variables
-const int switchPin = 10;
+const int switchPin = 6;
 int switchState = 0;
 int prevSwitchState = 0;
 int reply;
